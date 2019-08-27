@@ -1,0 +1,12 @@
+{
+    "app":{
+        "cfengine":"adobe@2018",
+        "restMappings":"/rest/*"
+    },
+    "openbrowser":"true",
+    "web":{
+        "rewrites":{
+            "enable":"true"
+        }
+    }
+}

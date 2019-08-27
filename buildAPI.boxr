@@ -1,0 +1,4 @@
+repl input="ExpandPath('./')" | set
+!java -jar lib/derbyrun.jar ij -p scripts/ij.properties scripts/create_table.sql
+server start restMappings=/rest/* openbrowser=false
+cfconfig datasource save name="postapp" dbdriver="Apache Derby Embedded" class="org.apache.derby.jdbc.EmbeddedDriver" database="${1}db\postapp" dsn="jdbc:derby:${1}db\postapp;MaxPooledStatements=300"
